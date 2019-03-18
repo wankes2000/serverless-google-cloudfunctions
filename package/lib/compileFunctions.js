@@ -133,7 +133,7 @@ const getFunctionTemplate = (funcObject, region, sourceArchiveUrl) => { //eslint
       availableMemoryMb: 256,
       runtime: 'nodejs8',
       timeout: '60s',
-      function: funcObject.handler,
+      function: funcObject.name,
       sourceArchiveUrl,
     },
   };

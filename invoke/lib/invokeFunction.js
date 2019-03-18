@@ -63,6 +63,5 @@ const getGoogleCloudFunctionName = (serviceFunctions, func) => {
     ].join('');
     throw new Error(errorMessage);
   }
-
-  return serviceFunctions[func].handler;
+  return func;
 };

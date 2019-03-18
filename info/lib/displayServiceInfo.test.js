@@ -117,7 +117,7 @@ describe('DisplayServiceInfo', () => {
           functions: [
             {
               name: 'func1',
-              resource: 'https://us-central1-my-project.cloudfunctions.net/handler',
+              resource: 'https://us-central1-my-project.cloudfunctions.net/func1',
             },
             {
               name: 'func2',
@@ -176,7 +176,7 @@ describe('DisplayServiceInfo', () => {
           functions: [
             {
               name: 'func1',
-              resource: 'https://us-central1-my-project.cloudfunctions.net/handler',
+              resource: 'https://us-central1-my-project.cloudfunctions.net/func1',
             },
             {
               name: 'func2',
@@ -197,7 +197,7 @@ describe('DisplayServiceInfo', () => {
 
       expectedOutput += `${chalk.yellow.underline('Deployed functions')}\n`;
       expectedOutput += `${chalk.yellow('func1')}\n`;
-      expectedOutput += '  https://us-central1-my-project.cloudfunctions.net/handler\n';
+      expectedOutput += '  https://us-central1-my-project.cloudfunctions.net/func1\n';
       expectedOutput += `${chalk.yellow('func2')}\n`;
       expectedOutput += '  projects/*/topics/my-test-topic\n';
 
